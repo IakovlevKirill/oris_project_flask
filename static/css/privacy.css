@@ -1,0 +1,15 @@
+.card {
+    background-color: rgb(238, 238, 241) !important;
+    height: 30%;
+    
+    
+}
+.card-title {
+    text-align: center;
+    padding: 30px 0 !important;
+    
+}
+.feature-lead {
+    line-height: 35px !important;
+    letter-spacing: 0.5px;
+}

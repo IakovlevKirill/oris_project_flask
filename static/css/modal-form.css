@@ -1,0 +1,52 @@
+form {
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+    flex-direction: column;
+}
+.form-wrap {
+    border-top: 0;
+    background-color: whitesmoke;;
+}
+.form-floating {
+    width: 70%;
+}
+.form-floating-1 {
+    margin-bottom: 3%;
+}
+.form-signin {
+    padding: 15px;
+}
+
+.form-signin .form-floating:focus-within {
+    z-index: 2;
+}
+
+.form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.form-control {
+    border: 2px solid black !important;
+    border-radius: 2% !important;
+}
+/* Глазочек */
+.password-control {
+    position: absolute;
+    top: 11px;
+    right: 6px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../img/eye-slash.svg) 0 0 no-repeat ;
+}
+.password-control.view {
+    background: url(../img/eye.svg) 0 0 no-repeat;
+}

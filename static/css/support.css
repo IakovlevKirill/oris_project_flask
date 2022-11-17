@@ -1,0 +1,15 @@
+.support-section {
+    margin-top: 80px !important;
+}
+.quest-ans-header {
+    margin-bottom: 0px;
+}
+.quest-ans-section-header {
+    margin-bottom: 50px;
+    text-align: center;
+}
+@media (max-width: 992px) {
+    .quest-ans-section-header {
+      margin-top: 50px;
+    }
+  }

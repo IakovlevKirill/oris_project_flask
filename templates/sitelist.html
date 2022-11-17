@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>Список магазинов</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/carousel.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/sitelist.css') }}">
+  </head>
+  <body>
+    
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="">
+      <img class="logo-icon "  src="../static/img/mainlogo.png">
+      
+      <!-- Кнопка выпадающего списка влево по умолчанию -->
+      <div class="btn-group dropstart">
+        <button type="button" class="btn menu" data-bs-toggle="dropdown" aria-expanded="false">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/checkout/">Сделать заказ</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/privacy/">Конфиденциальность</a></li>
+            <li><a class="dropdown-item" href="/support/">Помощь</a></li>
+            <li><a class="dropdown-item" href="/index/">Главная</a></li>
+          </ul>
+      </div>
+     
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+      
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <div class="container marketing">
+
+
+    <div class="card col-lg-12 first_section">
+       <div class="card-body">
+         <p class="lead feature-lead">
+          <div class="row featurette" id="section-res">
+            <div class="feature-logo col-md-12 order-md-1"> 
+              <h2 class="shop_heading">Одежда<br></h2>
+            </div>
+            <div class="col-lg-4 order-md-2 logo">
+              <a href="https://www.asos.com/" target="_blank"><img class="asos" src="../static/img/asos.jpg"  width="140px" height="140px"/></a>
+            </div> 
+            <div class="col-lg-4 order-md-2 logo">
+              <a href="https://www.nike.com/" target="_blank"><img class="nike" src="../static/img/nike-512.png"  width="140px" height="140px"/></a>
+            </div> 
+            <div class="col-lg-4 order-md-2 logo">
+              <a href="https://ru.shein.com/" target="_blank"><img class="shein" src="../static/img/Shein.png"  width="140px" height="140px"/></a>
+            </div> 
+            <div class="col-lg-4 order-md-2 logo">
+              <a href="https://www.global.adidas.com/" target="_blank"><img class="adidas" src="../static/img/adidas.png"  width="140px" height="140px"/></a>
+            </div> 
+            <div class="col-lg-4 order-md-2 logo">
+              <a href="https://www.hugoboss.com/us/men/" target="_blank"><img class="hb" src="../static/img/hb.png"  width="140px" height="140px"/></a>
+            </div> 
+            <div class="col-lg-4 order-md-2 logo">
+              <a href="https://www.crocs.com/" target="_blank"><img class="crocs" src="../static/img/crocs.jpg"  width="140px" height="140px"/></a>
+            </div> 
+            <div class="col-lg-4 order-md-2 logo">
+              <a href="https://www.alexandermcqueen.com/en-us" target="_blank"><img class="mcqueen" src="../static/img/mcqueen.png"  width="140px" height="140px"/></a>
+            </div> 
+            <div class="col-lg-4 order-md-2 logo">
+              <a href="https://prada.com/" target="_blank"><img class="prada" src="../static/img/prada.png"  width="140px" height="140px"/></a>
+            </div> 
+            <div class="col-lg-4 order-md-2 logo">
+              <a href="https://www.hermes.com/us/en/" target="_blank"><img class="hermes" src="../static/img/hermes.png"  width="140px" height="140px"/></a>
+            </div> 
+            <div class="col-lg-4 order-md-2 logo">
+              <a href="https://www.massimodutti.com/" target="_blank"><img class="mo" src="../static/img/m-mo.png"  width="140px" height="140px"/></a>
+            </div> 
+            <div class="col-lg-4 order-md-2 logo">
+              <a href="https://www.victoriassecret.com/us/" target="_blank"><img class="vs" src="../static/img/VS.png"  width="140px" height="140px"/></a>
+            </div> 
+            <div class="col-lg-4 order-md-2 logo">
+              <a href="https://www.burberry.com/" target="_blank"><img class="burberry" src="../static/img/BB.png"  width="140px" height="140px"/></a>
+            </div> 
+            <div class="col-lg-4 order-md-2 logo">
+              <a href="https://www.gucci.com/us/en/" target="_blank"><img class="gucci" src="../static/img/gucci.png"  width="140px" height="140px"/></a>
+            </div>
+            <div class="col-lg-4 order-md-2 logo">
+              <a href="https://www.balenciaga.com/" target="_blank"><img class="balenciaga" src="../static/img/balenciaga.png"  width="140px" height="140px"/></a>
+            </div> 
+            <div class="col-lg-4 order-md-2 logo">
+              <a href="https://www.ysl.com/en-us" target="_blank"><img class="sl" src="../static/img/SL.png"  width="140px" height="140px"/></a>
+            </div>  
+          </div>      
+         </p>
+       </div>
+     </div>    
+
+     <div class="card col-lg-12 first_section">
+      <div class="card-body">
+        <p class="lead feature-lead">
+         <div class="row featurette" id="section-res-2">
+           <div class="feature-logo col-md-12 order-md-1"> 
+             <h2 class="shop_heading">Техника<br></h2>
+           </div>
+           <div class="col-lg-4 order-md-2 logo">
+             <a href="https://www.amazon.com/" target="_blank"><img class="asos" src="../static/img/amazon.png"  width="140px" height="140px"/></a>
+           </div> 
+           <div class="col-lg-4 order-md-2 logo">
+             <a href="https://www.apple.com/" target="_blank"><img class="iherb" src="../static/img/apple.png"  width="140px" height="140px"/></a>
+           </div> 
+           <div class="col-lg-4 order-md-2 logo">
+             <a href="https://www.ebay.com/" target="_blank"><img class="ebay" src="../static/img/ebay.png"  width="140px" height="140px"/></a>
+           </div> 
+         </div>      
+        </p>
+      </div>
+    </div>    
+
+    <div class="card col-lg-12 first_section">
+      <div class="card-body">
+        <p class="lead feature-lead">
+         <div class="row featurette" id="section-res-3">
+           <div class="feature-logo col-md-12 order-md-1"> 
+             <h2 class="shop_heading">Прочее<br></h2>
+           </div>
+           <div class="col-lg-4 offset-md-2 order-md-4 logo">
+             <a href="https://www.asos.com/" target="_blank"><img class="asos" src="../static/img/asos.jpg"  width="140px" height="140px"/></a>
+           </div> 
+           <div class="col-lg-4 offset-md-1 order-md-2 logo">
+             <a href="https://www.iherb.com/" target="_blank"><img class="iherb" src="../static/img/iherb.png"  width="140px" height="140px"/></a>
+           </div> 
+         </div>      
+        </p>
+      </div>
+    </div>    
+
+    
+
+    <p class="pometka">Выше указаны самые популярные ресурсы. Если вашего магазина нет в данном перечне, уточните возможность заказа из этого магазина у менеджера.</p>
+
+    <hr class="featurette-divider">
+  </div>
+
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <!-- FOOTER -->
+  <footer class="container">
+    <p class="float-end back-link"><a href="/index/">На Главную</a></p>
+    <p>&copy; 2022 World-Shopping Buyers &middot; <a href="/privacy/">Конфиденциальность</a>  &middot; <a href="/support/">Помощь</a></p>
+  </footer>
+</main>
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+  
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+  </body>
+</html>

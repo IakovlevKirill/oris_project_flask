@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>Помощь</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/support.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/carousel.css') }}">
+  </head>
+  <body>
+    
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="">
+      <img class="logo-icon "  src="../static/img/mainlogo.png">
+      
+      <!-- Кнопка выпадающего списка влево по умолчанию -->
+      <div class="btn-group dropstart">
+        <button type="button" class="btn menu" data-bs-toggle="dropdown" aria-expanded="false">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/checkout/">Сделать заказ</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/privacy/">Конфиденциальность</a></li>
+            <li><a class="dropdown-item" href="/sitelist/">Список магазинов</a></li>
+            <li><a class="dropdown-item" href="/index/">Главная</a></li>
+          </ul>
+      </div>
+     
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+      
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+<div class="container marketing  support-section">
+
+  <div class="feature-logo quest-ans-header col-md-12 order-md-1">
+    <h3 class="featurette-heading">Ответы на возможные вопросы<span class="text-muted"></span></h3>
+  </div>
+
+<div class="container-quest-ans">
+  <div class="row">
+    <div class="col-lg-6">
+      <h4 class="featurette-heading quest-ans-section-header">Доставка<span class="text-muted"></span></h4>
+      <div class="accordion accordion" id="accordionFlushExample-1">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Как мне отслеживать свою посылку?
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Для того что узнать статус вашего заказа и отследить его вы можете написать нашему менеджеру.<br>
+
+              После формирования вашей заявки и оплаты заказа, и выкупа вашей посылки из магазина,
+              мы отслеживаем вашу посылку на всех этапах доставки, как только посылка пересечет границу РФ, мы оповестим вас.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              Как оплатить доставку?
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"> Стоимость доставки уже входит в общую стоимость Вашей покупки</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              Если я / мои друзья / мои клиенты по прописке живут в одном городе, можно ли послать посылку в другой город?
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">По закону нет привязки получателя к определенному городу или адресу по прописке. Поэтому ваши друзья или клиенты могут быть прописаны в Сыктывкаре, а получать посылки в Москве.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+              Как вы отправляете посылки из-за рубежа? Какой компанией?
+            </button>
+          </h2>
+          <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Мы пользуемся услугами международных логистических компаний. Их склады расположены практически в любой точке мира, что позволяет беспроблемно доставлять товары из Европы, Штатов, ОАЭ, Турции и т.д.</div>
+          </div>
+        </div>
+        <!--<div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+              Вопрос №5
+            </button>
+          </h2>
+          <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem ratione corrupti, placeat quas sapiente laudantium nesciunt. Exercitationem blanditiis vitae inventore perferendis quasi pariatur maxime dolore?</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingSix">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+              Вопрос №6
+            </button>
+          </h2>
+          <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, doloribus nulla. Repudiandae quam cum at doloribus in obcaecati amet sit, quasi facilis? Dolore, quidem eos.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingSeven">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+              Вопрос №7
+            </button>
+          </h2>
+          <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto obcaecati commodi necessitatibus fuga qui. Fuga repudiandae excepturi atque illo quasi debitis nemo optio commodi deserunt?</div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <h4 class="featurette-heading quest-ans-section-header">Таможня<span class="text-muted"></span></h4>
+      <div class="accordion accordion" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingEight">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+              Как моя посылка проходит таможенный контроль? Какие проверки и ограничения?
+            </button>
+          </h2>
+          <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">На данный момент законадельство РФ позволяет возить товары из-за границы в пределах
+              1000 долларов/31кг по весу. Это означает, что если ваша посылка входит в пределы ограничения, взиматься таможенная пошлина не будет. Если же ваша посылка выходит за границы
+              ограничений, пошлина будет начисляться таким способом:<br>
+               
+              1. Если стоимость и вес вашего одного заказа будет 600 евро и 2 кг, то таможня выставит пошлину по следующей формуле:
+               
+              1600 евро - 1000 евро = 600 евро * 15 % = 90 евро<br>
+               
+              2. Если вес всех ваших заказов за месяц будет 34 кг, то таможня выставит пошлину по следующей формуле:<br>
+               
+              34 кг - 31 кг = 3 кг * 2 евро\кг = 6 евро
+              В данном случае было превышение по беспошлинному весу, но не было — по стоимости товаров.<br>
+               
+              3. Если стоимость и вес вашего заказа будет 1200 евро и 34 кг, то таможня выставит пошлину по следующей формуле:
+               
+              1200 евро - 200 евро = 1000 евро * 15 % = 150 евро
+              34 кг - 31 кг = 3 кг * 2 евро\кг = 6 евро.
+              150 евро + 6 евро = 156 евро.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingNine">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
+              Как пройти таможенный контроль? 
+            </button>
+          </h2>
+          <div id="flush-collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-headingNine" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Для того что бы пройти таможенный контроль, сразу как Ваша посылка проходит границу, Вам приходит смс на Ваш телефон от компании, осуществляющей доставку. Транспортная компания будет запрашивать Ваши паспортные данные, для того что предоставить их таможенной службе. После подтверждения Вашей информации ваша посылка проходит границу и уже идет вам в руки.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTen">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">
+              Можно ли обжаловать уже выставленную пошлину?
+            </button>
+          </h2>
+          <div id="flush-collapseTen" class="accordion-collapse collapse" aria-labelledby="flush-headingTen" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Если таможня выставила пошлину, то обжаловать решение уже невозможно. Оплатить ее нужно как можно скорее, чтобы таможня не выставила счет за платное хранение груза.
+              Напоминаем, что с 1 августа 2020г. ставка сбора за совершение таможенных операций в отношении товаров для личного пользования, ввозимых с уплатой таможенной пошлины,
+              составляет 500 руб.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingEleven">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEleven" aria-expanded="false" aria-controls="flush-collapseEleven">
+              Я купил товар на распродаже, а с момента отправки цена выросла. Будут ли у меня проблемы с таможней в таком случае?
+            </button>
+          </h2>
+          <div id="flush-collapseEleven" class="accordion-collapse collapse" aria-labelledby="flush-headingEleven" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">На таможне понимают, что такое может случиться, поэтому они не обращают внимание на небольшую разницу между вашей ценой и указанной на сайте — до 10–20%. Но если вы пишете, что купили новый Iphone за $299 на распродаже, который везде стоит $1249,
+               то попросят показать выписку с банковского счета и скриншот заказа из личного кабинета магазина, где вы купили данный товар. Помимо этого, если таможня и после предоставленных документов не поверит вам, то закажет специальную экспертизу.
+               Если докажут, что товар не мог быть куплен за такую стоимость, — все равно попросят заплатить таможенную пошлину. Поэтому убедительно просим сообщать нам правдивую информацию при оформлении посылки.</div>
+          </div>
+        </div>
+        <!--<div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwelve">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwelve" aria-expanded="false" aria-controls="flush-collapseTwelve">
+              Вопрос №12
+            </button>
+          </h2>
+          <div id="flush-collapseTwelve" class="accordion-collapse collapse" aria-labelledby="flush-headingTwelve" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem ratione corrupti, placeat quas sapiente laudantium nesciunt. Exercitationem blanditiis vitae inventore perferendis quasi pariatur maxime dolore?</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThirteen">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThirteen" aria-expanded="false" aria-controls="flush-collapseThirteen">
+              Вопрос №13
+            </button>
+          </h2>
+          <div id="flush-collapseThirteen" class="accordion-collapse collapse" aria-labelledby="flush-headingThirteen" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, doloribus nulla. Repudiandae quam cum at doloribus in obcaecati amet sit, quasi facilis? Dolore, quidem eos.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingFourteen">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFourteen" aria-expanded="false" aria-controls="flush-collapseFourteen">
+              Вопрос №14
+            </button>
+          </h2>
+          <div id="flush-collapseFourteen" class="accordion-collapse collapse" aria-labelledby="flush-headingFourteen" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto obcaecati commodi necessitatibus fuga qui. Fuga repudiandae excepturi atque illo quasi debitis nemo optio commodi deserunt?</div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!--<div class="col-lg-4">
+      <h4 class="featurette-heading quest-ans-section-header">Деньги сука<span class="text-muted"></span></h4>
+      <div class="accordion accordion" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingFiveteen">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFiveteen" aria-expanded="false" aria-controls="flush-collapseFiveteen">
+              Вопрос №15
+            </button>
+          </h2>
+          <div id="flush-collapseFiveteen" class="accordion-collapse collapse" aria-labelledby="flush-headingFiveteen" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores et voluptate eum minima. Ut nemo et quaerat, libero delectus deserunt eius eveniet ipsa veniam reiciendis?</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingSixteen">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSixteen" aria-expanded="false" aria-controls="flush-collapseSixteen">
+              Вопрос №16
+            </button>
+          </h2>
+          <div id="flush-collapseSixteen" class="accordion-collapse collapse" aria-labelledby="flush-headingSixteen" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, quod id. Facere voluptates ex eos atque molestias officiis necessitatibus ad, magni reprehenderit ullam nesciunt quod?</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingSeventeen">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeventeen" aria-expanded="false" aria-controls="flush-collapseSeventeen">
+              Вопрос №17
+            </button>
+          </h2>
+          <div id="flush-collapseSeventeen" class="accordion-collapse collapse" aria-labelledby="flush-headingSeventeen" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente suscipit sunt ipsum, sed minima tempore nihil facere ullam amet ratione modi numquam ducimus accusamus quo!</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingEightteen">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEightteen" aria-expanded="false" aria-controls="flush-collapseEightteen">
+              Вопрос №18
+            </button>
+          </h2>
+          <div id="flush-collapseEightteen" class="accordion-collapse collapse" aria-labelledby="flush-headingEightteen" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum ipsum esse eaque eius, adipisci distinctio beatae mollitia sunt facilis, nihil labore libero nobis cupiditate laborum!</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingNineteen">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNineteen" aria-expanded="false" aria-controls="flush-collapseNineteen">
+              Вопрос №19
+            </button>
+          </h2>
+          <div id="flush-collapseNineteen" class="accordion-collapse collapse" aria-labelledby="flush-headingNineteen" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem ratione corrupti, placeat quas sapiente laudantium nesciunt. Exercitationem blanditiis vitae inventore perferendis quasi pariatur maxime dolore?</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwenty">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwenty" aria-expanded="false" aria-controls="flush-collapseTwenty">
+              Вопрос №20
+            </button>
+          </h2>
+          <div id="flush-collapseTwenty" class="accordion-collapse collapse" aria-labelledby="flush-headingTwenty" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, doloribus nulla. Repudiandae quam cum at doloribus in obcaecati amet sit, quasi facilis? Dolore, quidem eos.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwentyone">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwentyone" aria-expanded="false" aria-controls="flush-collapseTwentyone">
+              Вопрос №21
+            </button>
+          </h2>
+          <div id="flush-collapseTwentyone" class="accordion-collapse collapse" aria-labelledby="flush-headingTwentyone" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto obcaecati commodi necessitatibus fuga qui. Fuga repudiandae excepturi atque illo quasi debitis nemo optio commodi deserunt?</div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  </div>
+</div>
+
+<hr class="featurette-divider">
+
+  <!-- Three columns of text below the carousel -->
+  <div class="row">
+    <div class="col-lg-4 ">
+
+    </div><!-- /.col-lg-12 -->
+    <div class="col-lg-4">
+      <img class="support_photo" src="../static/img/поддержка.png" width="140px" height="200px">
+
+      <h2 class="dollar-header">Служба поддержки</h2>
+      <span class="text-muted"></span>
+      <p class="support_undertext">Если вы не нашли ответа на свой вопрос, или хотите уточнить информацию по заказу, свяжитесь со мной.<br><br>Telegram - <a href="https://t.me/WSB_Manager">@WSB_Manager</a><br>Почта - <a>worldshoppingbuyers@gmail.com</a></p>
+
+    </div><!-- /.col-lg-12 -->
+
+  </div><!-- /.row -->
+
+  <hr class="featurette-divider">
+
+  <!-- FOOTER -->
+  <footer class="container support-footer">
+    <p class="float-end back-link"><a href="/index/">На Главную</a></p>
+    <p>&copy; 2022 World-Shopping Buyers &middot; <a href="/privacy/">Конфиденциальность</a>   &middot; <a href="/support/">Помощь</a></p>
+  </footer>
+</main>
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+      
+  </body>
+</html>
